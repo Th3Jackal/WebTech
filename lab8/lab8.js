@@ -1,7 +1,7 @@
 
 function getDataFromForm(fname, lname) {
   alert("it worked!");
-  runAjax(this.fname, this.lname);
+  runAjax(fname, lname);
 }
 
 function runAjax(fname, lname) {
@@ -9,6 +9,6 @@ function runAjax(fname, lname) {
   xhttp.onload = function() {
     document.getElementById("responseString").innerHTML = this.responseText;
   }
-  xhttp.open("GET", "ajax.php?fname="+this.fname+"&lname="+this.lname);
+  xhttp.open("GET", "ajax.php?fname="+fname+"&lname="+lname);
   xhttp.send();
 }
