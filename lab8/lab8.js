@@ -1,6 +1,8 @@
 
-function getDataFromForm(fname, lname) {
+function getDataFromForm() {
   //alert("it worked!");
+  var fname = document.getElementById("fname").value;
+  var lname = document.getElementById("lname").value;
   runAjax(fname, lname);
 }
 
