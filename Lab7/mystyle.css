@@ -1,0 +1,103 @@
+/*
+h1 {}
+*/
+
+/*
+h2 {}
+*/
+
+p {
+    /* foreground/background color of paragraph elements */
+    color: white;
+    background-color: darkviolet;
+    
+    /* border color/style/width/radius */
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: orangered;
+
+    /* two additional rules */
+    width: 375px;
+    padding: 5px;
+}
+
+/*img {
+    height and width of image 
+    width: 225;
+    height: 300;
+} */
+
+#mmepic {
+    width: 225;
+    height: 300;
+    opacity: 0.9;
+    border-radius: 10%;
+    float: left;
+    margin: 20px;
+}
+
+.ipg {
+    letter-spacing: 0.1em;
+    position: relative;
+    left: 20px;
+}
+
+#ccontact {
+    text-align: center;
+    padding-right: 80%;
+}
+
+#cbox {
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    width: 19%;
+    height: 9%;
+    float: inline-start;
+}
+
+#cemaildiv {
+    text-align: center;
+    color: blueviolet;
+}
+
+#cemailbox {
+    color:orangered;
+}
+
+#cknowndiv {
+    text-align: center;
+    color: blueviolet;
+}
+
+#cspamdiv {
+    text-align: center;
+    color: blueviolet;
+}
+
+#csubmitdiv {
+    text-align: center;
+    color: blueviolet;
+}
+
+/* link properties */
+a:link {
+    color: darkblue;
+}
+
+a:hover {
+    color: orangered;
+}
+
+a:visited {
+    color: red;
+}
+
+/*
+li {}
+*/
+
+/*
+th {}
+*/

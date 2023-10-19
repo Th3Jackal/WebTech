@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>&nbsp;&nbsp;&nbsp;Third Page</title>
+        <link href="mystyle.css"
+              type="text/css"
+              rel="stylesheet">
+    </head>
+
+    <body>
+        <h1 id="ccontact">Contact</h1>
+
+        <div id="cbox">
+            <form  id="cform"
+                action="save_contact.php"
+                method="get">
+
+                <div id="cemaildiv">
+                    <tr>
+                        <th scope="col" id="cemail">Email: 
+                            <input id="cemailbox" type="text" name="email" size="20" maxlength="30" />
+                        </th>
+                    </tr>
+                </div>
+
+                <div id="cknowndiv">
+                    <tr>
+                        <th scope="col" id="cknown">Do I know you? 
+                            <input id="cknownyes" type="radio" name="known" value="yes" checked="checked" /> Yes
+                            <input id="cknownno" type="radio" name="known" value="no" /> No
+                        </th>
+                    </tr>
+                </div>
+
+                <div id="cspamdiv">
+                    <tr>
+                        <th scope="col" id="cspam">
+                            <input id="cspamcheck" type="checkbox" name="spam" value="spam" /> 
+                            I would like to have spam mail forwarded to me
+                        </th>
+                    </tr>
+                </div>
+
+                <div id="csubmitdiv">
+                    <tr>
+                        <th scope="col" id="csubmit">
+                            <input id="csubmitbutton" type="submit" value="Submit" />
+                        </th>
+                    </tr>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
