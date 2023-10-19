@@ -1,5 +1,5 @@
 
-function getDataFromForm(fname, lname) {
+function getDataFromForm() {
   //alert("it worked!");
   var fnamestr = document.getElementById('fname').value;
   var lnamestr = document.getElementById('lname').value;
