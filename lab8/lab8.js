@@ -9,6 +9,6 @@ function runAjax(fname, lname) {
   xhttp.onload = function() {
     document.getElementById("responseString").innerHTML = this.responseText;
   }
-  xhttp.open("GET", "ajax.php?fname="+fname+"&lname="+lname, true);
+  xhttp.open("GET", "ajax.php?"+fname+lname, true);
   xhttp.send();
 }
