@@ -1,7 +1,7 @@
 
 function getDataFromForm(fname, lname) {
   alert("it worked!");
-  runAjax(fname, lname);
+  runAjax(this.fname, this.lname);
 }
 
 function runAjax(fname, lname) {
