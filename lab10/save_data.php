@@ -1,8 +1,8 @@
 <?php
 
 $file = fopen("data.txt","a+");
-$fnamestr = document.getElementById('fname').value;
-$lnamestr = document.getElementById('lname').value;
+$fnamestr = $_GET['fname'];
+$lnamestr = $_GET['lname'];
 echo fwrite($file,$fnamestr);
 echo fwrite($file,$lnamestr);
 fclose($file);
