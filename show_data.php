@@ -1,5 +1,5 @@
 <html>
-<body>
+    <body>
         <?
             if(!file_exists("data.txt"))
             {
