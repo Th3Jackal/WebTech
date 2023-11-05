@@ -15,12 +15,18 @@
         exit;
     }
     echo "<table border = 4>";
-
+    $i = 1;
     while(!feof($file))
     {
         $name = fgets($file);
-        echo "<tr><td>$name</td>";
-        //echo "<td>$name</td>";
+        if($i = 1) {
+            echo "<tr><td>$name</td>";
+            $i = 0;
+        }
+        else if($i = 0) {
+            echo "<td>$name</td>";
+            $i = 1;
+        }
 
     }
         echo "</table>";
