@@ -10,14 +10,12 @@
 <html>
 <body>
 
-<p>
 <?php
 if(isset($_COOKIE[$cname]))
 {
-    echo "Cookie '" . $cname . "' is set with value of " . $cvalue . "."; 
+    echo "<p>Cookie '" . $cname . "' is set with value of " . $cvalue . ".</p>"; 
 }
 ?>
-</p>
 
 </body>
 </html>
