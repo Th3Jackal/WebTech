@@ -2,7 +2,7 @@
     $cname = "Test";
     $cvalue = "yes";
     setcookie("Test", $cvalue, time()+90, "/");
-    if(isset($_COOKIE[$cname]))
+    $if(isset($_COOKIE[$cname]))
     {
         echo "<p>Cookie '" . $cname . "' is set with value of " . $cvalue . ".</p>"; 
     }
@@ -11,3 +11,5 @@
         setcookie("Test", $cvalue, time()+90, "/");
     }
 ?>
+
+<p>Cookie '<?= $cname ?>' is set with value of <?= $cvalue ?></p>
