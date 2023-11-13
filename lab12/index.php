@@ -5,15 +5,14 @@
     {
         setcookie($name, $value, time() + (90), "/");
     }
+    else
+    {
+        $message = 'Cookie named ' . $name . ' is set';
+    }
 ?>
 
 <html>
 <body>
-<?php
-    $if(isset($_COOKIE[$name]))
-    {
-        echo "Cookie '" . $name . "' is set";
-    }
-?>
+<p><?= $message ?></p>
 </body>
 </html>
