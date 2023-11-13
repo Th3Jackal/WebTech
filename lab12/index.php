@@ -1,18 +1,23 @@
 <?php
-    $name = "cookie";
-    $value = "1";
-    $if(!isset($_COOKIE[$name]))
+    $cname = "Test";
+    $cvalue = "yes";
+    $if(!isset($_COOKIE[$cname]))
     {
-        setcookie($name, $value, time() + (90), "/");
-    }
-    else
-    {
-        $message = 'Cookie named ' . $name . ' is set';
+        setcookie("Test", $cvalue, time()+90, "/");
     }
 ?>
 
 <html>
 <body>
-<p><?= $message ?></p>
+
+<p>
+<?php
+if(isset($_COOKIE[$cname]))
+{
+    echo "Cookie '" . $cname . "' is set with value of " . $cvalue . "."; 
+}
+?>
+</p>
+
 </body>
 </html>
