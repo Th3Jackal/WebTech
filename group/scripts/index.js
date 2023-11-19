@@ -156,12 +156,6 @@ function genreHandler(){
 
 }
 
-function searchTitle(){
-    var query = document.getElementById('search').value;
-    var newLocation = "https://webtech4413.azurewebsites.net/group/search.html?" + query + "/";
-    window.location.href = newLocation;
-}
-
 
 //genreHandler();
 get_all_books();
