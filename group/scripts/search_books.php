@@ -19,7 +19,7 @@ if (mysqli_connect_errno())
 $search = $_GET['search'];
 
 $query="SELECT Books.Title, Books.SellingPrice, Authors.Name, Images.ImagePath, Books.ISBN FROM Books INNER JOIN Images ON Books.ISBN = Images.ISBN INNER JOIN Authors ON Books.AuthorId
-= Authors.AuthorId WHERE Books.Title LIKE \"$search\"";
+= Authors.AuthorId WHERE Books.Title LIKE %$search%";
 
 $result = $db_conn->query($query);
 
