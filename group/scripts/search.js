@@ -59,7 +59,7 @@ function generate_books(dataArray){
 function searchHandler(){
 
     let url = document.URL;
-    let search = url.split('?').pop()
+    let search = url.split('=').pop()
     search = search.replace(/_/g," ");
     get_search_books(search);
 
